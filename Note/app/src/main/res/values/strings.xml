@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Notes</string>
+    <string name="note_title">Title</string>
+    <string name="note_content">Content</string>
+    <string name="titleString">Write Title here...</string>
+    <string name="contentString">Write Content here...</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+</resources>

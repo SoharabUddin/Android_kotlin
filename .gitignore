@@ -1,0 +1,90 @@
+# Android Studio
+*.iml
+/.gradle
+/local.properties
+/.idea
+
+# Gradle
+/.gradle
+/build/
+
+# Keystore files
+/keystore.jks
+/keystore.properties
+
+# External native build
+/cmake-build/
+/ndk/
+
+# Android Studio Navigation editor
+/navigation/
+
+# Proguard
+/proguard/
+
+# Logs
+/log/
+
+# Build files
+/captures/
+/output.json
+
+# Lint
+/lint/
+
+# Intellij
+/*.iml
+/*.ipr
+/*.iws
+/.idea/
+
+# User-specific files
+/.idea/
+*.iml
+*.iws
+*.bak
+*.swp
+*.DS_Store
+
+# Local configuration file (sdk path, etc.)
+/local.properties
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# JetBrains
+.idea/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Visual Studio Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Android
+/app/build/
+/gradle/
+/captures/
+

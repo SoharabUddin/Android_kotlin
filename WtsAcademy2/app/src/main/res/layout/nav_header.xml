@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="?attr/colorPrimary"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/headerImageView"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_launcher_foreground"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_background" />
+
+    <TextView
+        android:id="@+id/headerNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="User Name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/headerEmailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="user@example.com"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal" />
+</LinearLayout>

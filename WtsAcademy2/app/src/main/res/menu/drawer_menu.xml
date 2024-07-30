@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group_home">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home" />
+    </group>
+
+    <group android:id="@+id/group_products_profile">
+        <item
+            android:id="@+id/nav_product_list"
+            android:title="Product List" />
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_sign_out"
+            android:title="Sign Out" />
+    </group>
+
+    <group android:id="@+id/group_sign_in">
+        <item
+            android:id="@+id/nav_sign_in"
+            android:title="Sign In" />
+    </group>
+
+</menu>

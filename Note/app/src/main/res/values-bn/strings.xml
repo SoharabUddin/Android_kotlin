@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">আমার নোটস</string>
+    <string name="note_title">শিরোনাম</string>
+    <string name="note_content">বিষয়বস্তু</string>
+    <string name="titleString">এখানে শিরনাম লিখুন...</string>
+    <string name="contentString">এখানে বিষয়বস্তু লিখুন...</string>
+    <string name="save">সেভ</string>
+    <string name="delete">মুছুন</string>
+</resources>

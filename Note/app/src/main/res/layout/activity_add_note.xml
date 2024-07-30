@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:padding="10sp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFECEE"
+    tools:context=".Activities.AddNoteActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutForTitle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EFECEE"
+        android:padding="5sp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/titleEDT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#EE807C7E"
+            android:textStyle="bold"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/titleString">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutForContent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/saveButton"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutForTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/contentEDT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/contentString"
+            android:textColor="#EE807C7E"
+            android:textStyle="bold"
+            android:padding="20sp"
+            android:gravity="top|start"
+            android:background="@drawable/edit_text_background"
+            android:textAlignment="gravity"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5sp"
+        android:background="@drawable/textview_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:padding="15sp"
+        android:text="@string/save"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/deleteButton"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5sp"
+        android:background="@drawable/textview_background"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:padding="15sp"
+        android:text="@string/delete"
+        android:textColor="#E12B2B"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="10dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

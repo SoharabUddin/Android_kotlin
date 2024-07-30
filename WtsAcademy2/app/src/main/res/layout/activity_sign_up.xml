@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SignUpActivity"
+    android:padding="16dp"
+    android:background="#ECFAFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:textStyle="bold|italic"
+            android:paddingBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="Sign Up"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/first_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:textSize="20sp"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_background"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/last_name_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:textSize="20sp"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_background"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textSize="20sp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edit_text_background"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_layout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textSize="20sp"
+                android:inputType="textPassword"
+                android:background="@drawable/edit_text_background"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/uploadPictureTV"
+            android:layout_marginVertical="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="5sp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/textview_background"
+            android:textSize="20sp"
+            android:text="Upload Picture"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:visibility="gone"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sign_up_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:background="@drawable/textview_background"
+            android:text="Submit"/>
+        <TextView
+            android:id="@+id/signinTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign in here..."
+            android:gravity="end"
+            android:padding="5sp"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</FrameLayout>
